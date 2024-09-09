@@ -1,0 +1,164 @@
+body {
+  background: linear-gradient(to bottom right, white, limegreen); /*using linear gradient to transition the colors to the bottom right.*/
+}
+.header a {
+  float: right; 
+  color: #f2f2f2; /*the color of the nav links*/
+  padding: 16px;
+  text-decoration: none; /*it removes the lines under your nav links*/
+  font-size: 17px;
+}
+
+.header {
+  overflow: hidden; /*avoid overlapping*/
+  background-color: #333;
+} /*background color of the navigation*/
+
+
+.header a:hover {
+  background-color: white; /*the background-color that appears when you hover on the nav links*/
+ color: black; /*the color of the nav links that appears when you hover around them*/
+}
+
+.header a.active {
+  background-color: #04AA6D; /*the background-color of the opened page*/
+  color: white; /*the color of opened page link*/
+}
+
+h1 {
+  text-align: center; /*heading aligned to the center*/
+  font-family: Arial, Helvetica, sans-serif; /*the font that similar to each other*/
+  font-size: 90px;
+  color: limegreen;}
+h4 {
+  text-align: center;
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 150%;
+}
+
+.paragraph {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: oblique;
+  font-size: 16px;
+}
+
+.picture {
+  width: 800px;
+  height: 215px;
+}
+
+/*home pagr styling*/
+
+
+.heading1 {
+  font-size: 50px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 25px;
+  text-shadow: 3px 2px limegreen; /*the px align the shadow of the text*/
+}
+
+p {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+img {
+  width: 300px;
+  height: 300px;
+  display: block; /*ensures that the image remains at the center and does not lose quality*/
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.staff {
+  display: flex; /*creates a flexible layout horizontal*/
+  justify-content: space-around /*divide the images to show evenly between and around*/
+}
+
+.testimonials {
+  display: flex;
+  justify-content: space-around
+}
+
+pre{
+  font-family: Arial, Helvetica, sans-serif;
+}
+/*AboutUs*/
+
+fieldset {
+  width: 500px;
+  align-content: center;
+  margin: 50px auto; /*aligns form field set to the center*/
+} 
+/*Registration*/
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+ 
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: white;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
